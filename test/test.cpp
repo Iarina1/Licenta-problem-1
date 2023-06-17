@@ -27,7 +27,7 @@ unittest(blink)
     assertEqual(0, pinTimes[0]);
     assertEqual(0, pinTimes[1]);
     assertEqual(1000000, pinTimes[2]);
-    assertEqual(200000, end);
+    assertEqual(2000000, end);
 }
 
 unittest_main()
