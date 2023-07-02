@@ -14,12 +14,9 @@ jobs:
           name: Test
           command:
             bundle exec arduino_ci_remote.rb | tee /tmp/test_output.txt
-          no_output_timeout: 1m
       - store_artifacts:
             path: /tmp/test_output.txt
             destination: test_output
-      - store_test_results:
-          path: test/reports
 
 workflows:
   arduino-ci-workflow:
