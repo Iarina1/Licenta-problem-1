@@ -17,6 +17,8 @@ jobs:
       - store_artifacts:
             path: /tmp/test_output.txt
             destination: test_output
+      - store_test_results:
+          path: test/reports
 
 workflows:
   arduino-ci-workflow:
